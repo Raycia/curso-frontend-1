@@ -24,7 +24,7 @@ body {
 }
 
 header {
-    background:red;
+    background:rgb(218, 215, 225);
     display: block;
     float: left;
     padding: 20px;
@@ -92,6 +92,7 @@ ol {
 ol li {
     font-size: 1.4rem;
     color: #454545;
+    line-height: 1.8;
 }
 
 section {
@@ -158,13 +159,53 @@ footer small {
 }
 
 @media (max-width: 425px) {
+    p {
+        align-content: center;
+    }
+}
+
+@media (max-width: 425px) {
+    section,
     section nav,
     section article {
         width: 100%;
+        padding: none;
     }  
 
     .container {
         padding-left: 1%;
         padding-right: 1%;
     }
+
+    nav li {
+        margin: 0;
+        background-color:rgb(28, 11, 68);
+        text-align: center;
+     }
+
+    nav li:hover {
+        background-color:rgb(51, 0, 169);
+    }
+
+    nav a {
+        color: white;
+     }
+
+}
+
+.cog-branding, :root:root:root:root:root .cog-branding {
+    display: none;
+}
+
+
+html .cog-cognito *, html .cog-cognito *::before, html .cog-cognito *::after, :root:root:root:root:root .cog-cognito *, :root:root:root:root:root .cog-cognito *::before, :root:root:root:root:root .cog-cognito *::after{
+    background-color: #b8c8d6;
+}
+
+html .cog-cognito--styled .cog-button--primary, html .cog-cognito--styled .cog-page__navigation .cog-button, :root:root:root:root:root .cog-cognito--styled .cog-button--primary, :root:root:root:root:root .cog-cognito--styled .cog-page__navigation .cog-button {
+    background-color: green;
+}
+
+html .cog-cognito--styled .cog-button__icon, html .cog-cognito--styled .cog-button__text, :root:root:root:root:root .cog-cognito--styled .cog-button__icon, :root:root:root:root:root .cog-cognito--styled .cog-button__text {
+    background-color: green;
 }
