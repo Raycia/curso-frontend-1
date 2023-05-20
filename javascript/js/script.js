@@ -145,9 +145,35 @@ function validaEmail(elemento){
 }
 
 
+function validaUF(elemento) {
+    elemento.addEventListener('focusout', function(event) {
+        event.preventDefault();
+      
+        const ufValido = /^[a-zA-Z]{2}$/i;
+        if (this.value.match(ufValido)) {
+            document.querySelector('.mensagem').innerHTML = "";
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('erro');
+        } else {
+            document.querySelector('.mensagem').innerHTML = "Verifique o preenchimento do campo UF. Deve conter exatamente duas letras.";
+            this.classList.add('erro');
+            this.parentNode.classList.add('erro');
+            return false;
+        }
+    });
+}
+  
+  
+  
 let camposObrigatorios = document.querySelectorAll('input.obrigatorio');
 let camposNumericos = document.querySelectorAll('input.numero');
 let camposEmail = document.querySelectorAll('input.email');
+let campoUF = document.querySelector('input.obrigatorio[name="uf"]');
+
+
+if (campoUF) {
+    validaUF(campoUF);
+}
 
 for( let emFoco of camposObrigatorios) {
     validaCampo(emFoco);
@@ -160,4 +186,5 @@ for( let emFoco of camposNumericos) {
 for( let emFoco of camposEmail) {
     validaEmail(emFoco);
 }
+
 
