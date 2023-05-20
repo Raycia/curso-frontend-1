@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/custom.css">
     <title>Document</title>
 </head>
@@ -14,12 +14,13 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1>Logo</h1>
+                    <img src="./images/coca-cola-cke.jpg" alt="" style="width: 150px; padding-top: 10px;">
+                    
                 </div>
                 <div class="col">
                     <ul class="nav justify-content-end">
                         <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">A Coca Cola</a></li>
                         <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contatos">Contato</a></li>
                     </ul>
@@ -29,31 +30,31 @@
     </header>
 
     <section>
-        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
-                <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner" role="listbox">
+            <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide">
+                    <img src="./images/garrafas-de-coca-cola-1.webp" class="d-block mx-auto" alt="Image 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide">
+                    <img src="./images/historia-coca-cola.jpg" class="d-block mx-auto" alt="Image 2">
                 </div>
                 <div class="carousel-item">
-                    <img src="holder.js/900x500/auto/#666:#444/text:Third slide" alt="Third slide">
+                    <img src="./images/cocacola_chatgpt_4-220223-165612-800-resize.jpg" class="d-block mx-auto" alt="Image 3">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-              </button>
+            </a>
         </div>
     </section>
     
@@ -61,13 +62,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-7 col-sm-12">
-                    <h2>Sobre nós</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vero doloribus veniam incidunt reprehenderit. Itaque, culpa? Rerum, excepturi vero hic error aperiam voluptatibus qui ducimus cupiditate quod consequatur blanditiis aut.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vero doloribus veniam incidunt reprehenderit. Itaque, culpa? Rerum, excepturi vero hic error aperiam voluptatibus qui ducimus cupiditate quod consequatur blanditiis aut.</p>
-                    <a class="btn btn-lg btn-success">Botão</a>
+                    <h2>Sobre a Coca-Cola</h2>
+                    <p>A Coca-Cola é uma das bebidas mais famosas e icônicas do mundo. Desde sua criação em 1886, ela tem sido uma presença constante em celebrações, refeições e momentos de descontração ao redor do globo.</p>
+                    <p>Com sua fórmula única e segredos bem guardados, a Coca-Cola oferece um sabor inconfundível e refrescante. Seu distintivo tom marrom e efervescência são reconhecidos instantaneamente em qualquer lugar.</p>
+                    <a class="btn btn-lg btn-danger">Saiba mais sobre nós</a>
                 </div>
                 <div class="col-md-5 col-sm-12">
-                    <img src="./images/pexels-josh-sorenson-1714208.jpg" alt="Imagem Exemplo" class="img-fluid">
+                    <img src="./images/fabrica-coca-jundiai-original1.webp" alt="Imagem Exemplo" class="imag-principal">
                 </div>
             </div>
         </div>
@@ -79,32 +80,34 @@
             <div class="row">
                 <div class="col">
 
-                    <h2>Produtos</h2>
+                    <h2>Qual Coca-Cola mais combina com você?</h2>
 
                     <div class="card">
-                        <img src="./images/pexels-josh-sorenson-1714208.jpg" alt="Imagem Exemplo" class="img-fluid">
+                        <img src="./images/23075973.webp" alt="Coca Cola Grande" class="img-fluid">
                         <div class="card-body">
-                            <h5 class="card-title">Lorem ipsum dolor</h5>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
-                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1" >ver produto</a>
+                            <h5 class="card-title">Para família</h5>
+                            <p class="card-text">Tome sua Coca-Cola com as pessoas que você mais ama</p>
+                            <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-1" >ver produto</a>
                         </div>
                     </div>
 
+
                     <div class="card">
-                        <img src="./images/pexels-josh-sorenson-1714208.jpg" alt="Imagem Exemplo" class="img-fluid">
+                        <img src="./images/coca-cola-lata-350ml-7894900010015.jpg" alt="Coca Cola lata" class="img-fluid">
                         <div class="card-body">
-                            <h5 class="card-title">Lorem ipsum dolor</h5>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
-                            <a class="btn btn-primary" href="#produto-2">ver produto</a>
+                            <h5 class="card-title">Coca Cola Lata</h5>
+                            <p class="card-text">É sustentável? Nossa Coca Cola lata é 100% reciclável e mata sua sede</p>
+                            <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-2" >ver produto</a>
                         </div>
                     </div>
 
+
                     <div class="card">
-                        <img src="./images/pexels-josh-sorenson-1714208.jpg" alt="Imagem Exemplo" class="img-fluid">
+                        <img src="./images/l-3c7236eb8f1f440aa375e27b5a7a31d6.png" alt="Imagem Exemplo" class="img-fluid">
                         <div class="card-body">
-                            <h5 class="card-title">Lorem ipsum dolor</h5>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
-                            <a class="btn btn-primary" href="#produto-3">ver produto</a>
+                            <h5 class="card-title">Caçulinha</h5>
+                            <p class="card-text">As vezes a sede e a vontade não podem esperar, resolva ambas</p>
+                            <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-3" >ver produto</a>
                         </div>
                     </div>
                     
@@ -137,7 +140,7 @@
                             <textarea  class="form-control" name="" rows="5"></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-lg btn-success">Solicitar Cotação</button>
+                        <button type="submit" class="btn btn-lg btn-danger">Solicitar Cotação</button>
 
                     </form>
 
@@ -152,43 +155,101 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Produto 1</h5>
+                    <h5 class="modal-title">Para família</h5>
                     <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h6>Confira o tamanho e os preços</h6>
+                    <h6>Confira os preços</h6>
                     <table class="table table-hover table-striped">
                         <thead>
                             <tr>
-                                <th>Tamanho</th>
+                                <th>Litros</th>
                                 <th>Valor</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>P</td>
-                                <td>R$ 100</td>
-                            </tr>
-                            <tr>
-                                <td>M</td>
-                                <td>R$ 200</td>
-                            </tr>
-                            <tr>
-                                <td>G</td>
-                                <td>R$ 300</td>
+                                <td>2L</td>
+                                <td>R$ 10,00</td>
                             </tr>
                         </tbody>
                     </table>
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-
+  
     </div>
 
-    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <div class="modal fade" id="modal-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Coca Cola Lata</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os preços</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Litros</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>350ml</td>
+                                <td>R$ 5,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+  
+    </div>
+
+    <div class="modal fade" id="modal-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Caçulinha</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os preços</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Litros</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>200ml</td>
+                                <td>R$ 3,50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+  
+    </div>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
