@@ -14,3 +14,27 @@ textarea {
     float: left;
     margin: 5px;
 }
+
+header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style: groove;
+}
+
+img {
+    margin-top: -10px;
+}
+
+.nav-link {
+    color: red;
+}
+
+
+.img-fluid {
+    padding-top: 20px;
+    max-width: 120px;
+}
+
+.imag-principal {
+    max-width: 400px;
+}
