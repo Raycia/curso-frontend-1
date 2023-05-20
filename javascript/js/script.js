@@ -155,7 +155,7 @@ function validaUF(elemento) {
             this.classList.remove('erro');
             this.parentNode.classList.remove('erro');
         } else {
-            document.querySelector('.mensagem').innerHTML = "Verifique o preenchimento do campo UF. Deve conter exatamente duas letras.";
+            document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em destaque";
             this.classList.add('erro');
             this.parentNode.classList.add('erro');
             return false;
@@ -173,6 +173,10 @@ let campoUF = document.querySelector('input.obrigatorio[name="uf"]');
 
 if (campoUF) {
     validaUF(campoUF);
+}
+
+for( let emFoco of campoUF) {
+    validaCampo(emFoco);
 }
 
 for( let emFoco of camposObrigatorios) {
